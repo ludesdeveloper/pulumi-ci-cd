@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      # pulumi
+      - curl -fsSL https://get.pulumi.com/ | sh
+      - export PATH=$PATH:$HOME/.pulumi/bin
+  build:
+    commands:
+      - echo "Updating Pulumi Stack"
+      - node --version
+      - npm install
+      - pulumi stack select FunGuardian/infrastructure/prod 
+      - pulumi up --yes
