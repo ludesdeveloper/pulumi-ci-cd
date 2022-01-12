@@ -73,12 +73,15 @@ pulumi destroy --yes
 ```
 pulumi stack rm dev
 ```
-4. Next we will destroy our Code Pipeline, make sure you are in create-codepipeline folder
+4. Change directory to create-codepipeline
 ```
 cd ../create-codepipeline
+```
+5. Next we will destroy our Code Pipeline
+```
 pulumi destroy --yes
 ```
-5. remove stack created in pulumi app
+6. remove stack created in pulumi app
 ```
 pulumi stack rm dev
 ```
