@@ -43,11 +43,11 @@ cd ../push-to-codecommit
 ```
 ./init.sh
 ```
+> Type dev for stack name, to easily follow along
 3. Add remote repo to git
 ```
 ./git_remote_init.sh
 ```
-> Type dev for stack name, to easily follow along
 4. Push code to repo
 ```
 git push origin master
