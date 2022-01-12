@@ -42,7 +42,7 @@ rm -rf .git
 ```
 2. Change directory to **push-to-codecommit**
 ```
-cd ../push-to-codecommit
+cd push-to-codecommit
 ```
 3. Execute initialization script
 ```
