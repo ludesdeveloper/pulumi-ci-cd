@@ -34,21 +34,26 @@ pulumi up
 ```
 6. Type yes to create infrastructure
 ### **Push Pulumi Code to Repository**
-> This code will create new s3 bucket if CI CD success, before you follow these steps below, please remove .git folder in root folder
-1. Change directory to **push-to-codecommit**
+> This code will create new s3 bucket if CI CD success
+1. Remove .git folder
+```
+cd ..
+rm -rf .git
+```
+2. Change directory to **push-to-codecommit**
 ```
 cd ../push-to-codecommit
 ```
-2. Execute initialization script
+3. Execute initialization script
 ```
 ./init.sh
 ```
 > Type dev for stack name, to easily follow along
-3. Add remote repo to git
+4. Add remote repo to git
 ```
 ./git_remote_init.sh
 ```
-4. Push code to repo
+5. Push code to repo
 ```
 git push origin master
 ```
@@ -64,6 +69,7 @@ pulumi stack rm dev
 ```
 4. Next we will destroy our Code Pipeline, make sure you are in create-codepipeline folder
 ```
+cd ../create-codepipeline
 pulumi destroy --yes
 ```
 5. remove stack created in pulumi app
