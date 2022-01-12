@@ -25,10 +25,10 @@ cd create-codepipeline
 ```
 ./init.sh
 ```
-> Type dev for stack name, to easily follow along
 3. Script will ask for region, please type and hit enter
-4. Script will ask for pulumi token, please provide [Access Token](https://www.pulumi.com/docs/intro/console/accounts/#creating-access-tokens) 
-5. Execute pulumi up
+4. Type dev for stack name, to easily follow along
+5. Script will ask for pulumi token, please provide [Access Token](https://www.pulumi.com/docs/intro/console/accounts/#creating-access-tokens) 
+6. Execute pulumi up
 ```
 pulumi up
 ```
