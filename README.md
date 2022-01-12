@@ -25,12 +25,14 @@ cd create-codepipeline
 ```
 ./init.sh
 ```
+> Type dev for stack name, to easily follow along
 3. Script will ask for region, please type and hit enter
 4. Script will ask for pulumi token, please provide [Access Token](https://www.pulumi.com/docs/intro/console/accounts/#creating-access-tokens) 
 5. Execute pulumi up
 ```
 pulumi up
 ```
+6. Type yes to create infrastructure
 ### **Push Pulumi Code to Repository**
 > This code will create new s3 bucket if CI CD success, before you follow these steps below, please remove .git folder in root folder
 1. Change directory to **push-to-codecommit**
@@ -38,11 +40,11 @@ pulumi up
 ```
 ./init.sh
 ```
-> Type dev for stack name, to easily follow along
 3. Add remote repo to git
 ```
 ./git_remote_init.sh
 ```
+> Type dev for stack name, to easily follow along
 4. Push code to repo
 ```
 git push origin master
