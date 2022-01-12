@@ -13,5 +13,5 @@ phases:
       - echo "Updating Pulumi Stack"
       - node --version
       - npm install
-      - pulumi stack select FunGuardian/infrastructure/prod 
+      - pulumi stack select FunGuardian/infrastructure/dev 
       - pulumi up --yes
