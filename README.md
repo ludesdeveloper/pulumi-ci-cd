@@ -49,6 +49,12 @@ cd push-to-codecommit
 ./init.sh
 ```
 > Type dev for stack name, to easily follow along
+4. Init git
+```
+git init
+git add .
+git commit -m "create s3 with pulumi"
+```
 4. Add remote repo to git
 ```
 ./git_remote_init.sh
