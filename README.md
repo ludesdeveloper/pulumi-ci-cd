@@ -38,6 +38,7 @@ pulumi up
 ```
 ./init.sh
 ```
+> Type dev for stack name, to easily follow along
 3. Add remote repo to git
 ```
 ./git_remote_init.sh
