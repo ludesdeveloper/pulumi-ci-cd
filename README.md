@@ -35,4 +35,8 @@ pulumi up
 ### **Push Pulumi Code to Repository**
 > This code will create new s3 bucket if CI CD success
 1. Change directory to **push-to-codecommit**
-2. Initialize git, and push to repo (Before you do this, you need to remove .git folder in root directory)
+2. Execute initialization script
+```
+./init.sh
+```
+3. Initialize git, and push to repo (Before you do this, you need to remove .git folder in root directory)
