@@ -63,7 +63,6 @@ git commit -m "create s3 with pulumi"
 ```
 git push origin master
 ```
-> You may need to release change in CodePipeline if failed
 ### **Clean Up**
 1. Make sure you are in push-to-codecommit folder
 2. Type command below
